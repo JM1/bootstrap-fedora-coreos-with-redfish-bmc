@@ -1,0 +1,57 @@
+variant: fcos
+version: 1.4.0
+
+passwd:
+  users:
+    - name: jmeng
+      ssh_authorized_keys:
+        - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDLHg/svxPOltua4whk8ZI0Rlu5uGHvhBFKuOUHm+9Xkly2id2b1z+pn+rYkp6tMPBiYCQmICGfpwdID7GRZp17pzKpbuyz2REfwqcEQkuryvl9/J02H7S5gQHB7Wt/98qt+V74Si+wS/m9hXr1JJsVK4H/7fKpvEcsYQYNacekZhqa/77rXVlO/6N/GiXHBeDrxVKy5fnY2tqgmDp2bWgDQUwHTdR1B/rDn0TOqTanyUXhtNqP+PYtiUic8/+YCig7qe75p6L6PPVPFLwW6qqVtqri+7oKqYzBa2SD5nJ/6atIcArY2RRrnSvsBgkvEpKMW2NzV5+saER8JKli2MAbQGP9p+2R3nPkcYqNQWXwvF/vjyldI0vy1KbU7GgqMj2C7xWi2UNRN7F+AKADFKL2Gw7lJm8Uzt9i78bsIWheqcxnWrEzVeNURe1o7lnz5Qtqqm6XE4r2kAXXnGyVbkZk7KV4bshEGM1a6aslqAMCTIbWGEMCwGIyHXSz2+m4/uR5LZEKJokEuZoieZnhCOe1un69b2EsKtAMXSprTZz6fg2VtlAvs4Vzrr3/FuOFMzPXe7BcFWFphNA9R4hCAcTBw0U1Y3ACn9kjYKf6NR2eo1tLgSrPeCG7OwbvUKDpifyA8PHwm/gTGQnsNOT/j1WHyEe6sDKPej0qrKwOB9hszw== Jakob Meng <code@jakobmeng.de> (Ivytronik1LiDe)
+        - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAEAQC85YhTFpN4H17dih1LgYV4wpcdTiCNGO2LWsVNvwX3GW9icYHVXRJ85ZakBvvxmJIMZ3M2lIGh83oNfesywckFhXx9Zk3B2xa5UmYtwMdIyHJrdBuJvtXN4MLRtU65CbwKm2GP0VZ8P4YwseVCpBrwNyf+BKJyVr7ms/83icJ/obHo+jOu45VVXD/5gpqQlWmhHRB8hrtzbzfqYe9C0TBvJyD5P6wVskFJ+xTMxz4kXfxNED4iqyMPQzgUOvw9zh1jlYIHHJccBos7oqtdUuiwoG+Fl7acnpyG92iqfadPoeaF/ns+Ttg0dyFJR1PHzcKCF1X+IBGwyYxp2hYfgtBxpcAFzqdFgfsAxY4DvwfZ18GzCFSX3udMJMUU7aN7FlJIeRYNvZ+zqcP3UcARdv1uxXRBwGKS6ydyvZg+avEQkYGVwZTaGZMp98ydkcLui3EptbihO1O/V9xyJikGbdrKIYsRkiqw9ru3SCBQ+dv11Ahv5STmLp30bMXVieZ33+Q5pDQu82jqeF8B4/4Jsi0w9VnuvqM0qS9yp7+55Cx9OchzIyFqXMn55bp+cpjBaN7pc8y51kP3nLhmSMkN1wisCr5RM8vQbBjjyGRCREsRd4tpH/1ojmWVBb68KO/R0CwnN5fMYkseVQ1+MmEJsYjUVpjxdBO0RKvhWitFfMGTCAjn8ScQ/HhlG1C4XkMfdD6l1zi7m06ahvFndSyyoWLGeCpbarpoMJwV79tDfGA+4IagMRDyCwHkiSOtJzvcE8DUthK4Q2KbWDbitEpdApKSJgWMGRl3k5iCiSE8aUFmDkL3174EsNDof0oZIaf/pMPrqRRqFLxVPLuLYLxwfly5pkmrhTtTJGa+r1ePJEAPimaTJNLP3kzQSGQDuzsRuam+ac7Rfp7ZnI0oa6wVUrHPIcBOFZCCN1Rsno1OY5vPMHe+/xRxXPSxvwjqIm8n62TXkcfcv7K2n5i1HW2pW6oc7/0e1ZJNfwYCXNQXKE2+yIy+hw6pOdvBxivXfK8zHUfV2jmaBmivAMMeJP4fSRUNDGIMeUVGwcJJi5XK+EhEGEG9+fsEBQeVNQhROanRDETPXOO7kA1ShVyBSvgdP/k1iUDgtfD2lnKhDuHVe8c3oIx7hLWHjg4g0B4ZimgTyWgjjbgmA4y8JwxwvLAut1NVgQYjoVnGgy25fED1nZEON7WERNk0m5yGIWi5rEyiTjZoIbBDMmamyvf0F8GlPCCb/BI8cYTbqrKDdSTBc46LRR3IDHws5hQk/oyENU+bIRjDGGXO1ydeWR2qM/IMGjMV0y1M+4gcSAZp6I1G4eGaMT4duQg9sWQZz5aZ6LZCwEj4xm8EgQjq2kAOpAYDCHMb Jakob Meng <code@jakobmeng.de> (Positronik4LiDe)
+        - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICIqI8Z/823S+pcHS+D7EbWQXgHX3kLQjE42qNjLCF5G Jakob Meng <code@jakobmeng.de> (Positronik4LiDe)
+        - ecdsa-sha2-nistp521 AAAAE2VjZHNhLXNoYTItbmlzdHA1MjEAAAAIbmlzdHA1MjEAAACFBADyh+j6b7AOmiK7xz2Ffp/7wdllHYDEsKvK1UH7EfsUcNHu99ia5oQiQLuAKvckcbXgZ1mSI+nyz5Ez/I/TXMJZYACZrQ47I4m8FWyZMvqt01xXw7wqrjtpY10MfdduhyofjkAHkr4kEH5sv4xQbECejbB/3BcQp0kkHZWlVU8oZJQq3A== Jakob Meng <code@jakobmeng.de> (Positronik4LiDe)
+      groups:
+        - sudo
+        - wheel
+
+storage:
+  files:
+    - path: /usr/local/bin/bootstrap.sh
+      mode: 0755
+      contents:
+        inline: |
+          #!/bin/bash
+          # 2023 Jakob Meng, <jakobmeng@web.de>
+
+          set -euxo pipefail
+
+          # Disable IPv6 in NetworkManager connection(s) to prevent IPv6 related warnings
+          # Ref.: https://access.redhat.com/solutions/6967304
+          nmcli --get-value name connection \
+          | while read -r CONNECTION; do
+              nmcli connection modify "$CONNECTION" ipv6.method disabled
+          done
+
+systemd:
+  units:
+    - name: bootstrap.service
+      enabled: true
+      contents: |
+        # 2023 Jakob Meng, <jakobmeng@web.de>
+        [Unit]
+        Before=systemd-user-sessions.service
+        Wants=network-online.target
+        After=network-online.target
+
+        StartLimitBurst=3
+        StartLimitIntervalSec=infinity
+
+        [Service]
+        Type=oneshot
+        ExecStart=/usr/local/bin/bootstrap.sh
+        RemainAfterExit=yes
+        # Retry because network configuration might not be completed despite Wants=network-online.target
+        Restart=on-failure
+        RestartSec=15s
+
+        [Install]
+        WantedBy=multi-user.target
