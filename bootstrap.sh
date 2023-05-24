@@ -124,7 +124,7 @@ else
 fi
 
 if [ -n "$BMC_HOSTNAME_PORT" ]; then
-    [ -n "$ENDPOINT" ] || ENDPOINT=$(ip -j route get "$BMC_HOSTNAME_PORT" | jq -r '.[0].prefsrc')
+    [ -n "$ENDPOINT" ] || ENDPOINT=$(ip -j route get "$(echo "$BMC_HOSTNAME_PORT" | cut -d ':' -f 1)" | jq -r '.[0].prefsrc')
 
     read -r -s -p "Enter username and password for your BMC as 'username:password', e.g. 'root:secret':" bmc_user_pass
 

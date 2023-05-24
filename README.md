@@ -12,7 +12,7 @@ and enter:
 ```sh
 sudo -s
 
-# Define the BMC's hostname and its port (optional)
+# Define the BMC's hostname and its https port (optional)
 BMC_HOSTNAME_PORT="redfish-bmc.local"
 
 # Define a hostname or ip address which your BMC can resolve and connect to (optional)
