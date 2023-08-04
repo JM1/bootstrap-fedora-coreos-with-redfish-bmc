@@ -28,10 +28,8 @@ else
 fi
 
 if [ "$(id -u)" -ne 0 ]; then
-    if [ "$engine" = "podman" ] || ! id -nGz | tr '\0' '\n' | grep -q '^docker$'; then
-        error "Please run as root"
-        exit 125
-    fi
+    error "Please run as root"
+    exit 125
 fi
 
 cmd="$(readlink -f "$0")"
