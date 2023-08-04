@@ -110,6 +110,7 @@ else
         --name bootstrap-httpd \
         --cap-add=NET_ADMIN \
         --security-opt no-new-privileges \
+        --security-opt label=disable \
         --init \
         --network=bridge \
         -p 80:80 \
