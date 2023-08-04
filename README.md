@@ -21,6 +21,8 @@ ENDPOINT=$(ip -j route get 1.1.1.1 | jq -r '.[0].prefsrc')
 # Define the install destination device
 INSTALL_DEVICE=/dev/sda
 
+export BMC_HOSTNAME_PORT ENDPOINT INSTALL_DEVICE
+
 # Launch bootstrapping script and follow instructions on how to mount the CoreOS ISO as virtual media at your BMC
 # ATTENTION: All data of your bare-metal server will be wiped, so ensure $BMC_HOSTNAME_PORT is set correctly!
 ./bootstrap.sh
