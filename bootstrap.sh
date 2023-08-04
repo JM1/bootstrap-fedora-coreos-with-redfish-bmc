@@ -124,7 +124,11 @@ else
 fi
 
 if [ -n "$BMC_HOSTNAME_PORT" ]; then
-    [ -n "$ENDPOINT" ] || ENDPOINT=$(ip -j route get "$(echo "$BMC_HOSTNAME_PORT" | cut -d ':' -f 1)" | jq -r '.[0].prefsrc')
+    if [ -z "$ENDPOINT" ]; then
+        BMC_HOSTNAME=$(echo "$BMC_HOSTNAME_PORT" | cut -d ':' -f 1)
+        BMC_IP=$(getent hosts "$BMC_HOSTNAME" | awk '{ print $1 }')
+        ENDPOINT=$(ip -j route get "$BMC_IP" | jq -r '.[0].prefsrc')
+    fi
 
     read -r -s -p "Enter username and password for your BMC as 'username:password', e.g. 'root:secret':" bmc_user_pass
 
@@ -176,7 +180,9 @@ to finish execution of this script.
 ____EOF
 
 else
-    [ -n "$ENDPOINT" ] || ENDPOINT=$(ip -j route get 1.1.1.1 | jq -r '.[0].prefsrc')
+    if [ -z "$ENDPOINT" ]; then
+        ENDPOINT=$(ip -j route get 1.1.1.1 | jq -r '.[0].prefsrc')
+    fi
 
     cat << ____EOF
 Point BMC of your bare-metal server to 'http://$ENDPOINT/coreos-installer/bootstrap-minimal.iso'. For example, use:
