@@ -125,7 +125,7 @@ fi
 if [ -n "$BMC_HOSTNAME_PORT" ]; then
     if [ -z "$ENDPOINT" ]; then
         BMC_HOSTNAME=$(echo "$BMC_HOSTNAME_PORT" | cut -d ':' -f 1)
-        BMC_IP=$(getent hosts "$BMC_HOSTNAME" | awk '{ print $1 }')
+        BMC_IP=$(getent hosts "$BMC_HOSTNAME" | head -n 1 | awk '{ print $1 }')
         ENDPOINT=$(ip -j route get "$BMC_IP" | jq -r '.[0].prefsrc')
     fi
 
